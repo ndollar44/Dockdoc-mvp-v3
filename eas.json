@@ -1,14 +1,19 @@
 {
   "cli": { "version": ">= 13.0.0" },
   "build": {
-    "production": {
-      "android": { "buildType": "apk" },
-      "ios": { "simulator": true }
+    "apk": {
+      "android": { "buildType": "apk" }
+    },
+    "store": {
+      "android": { "buildType": "app-bundle" }
     },
     "development": {
       "developmentClient": true,
-      "android": { "buildType": "apk" }
+      "android": { "buildType": "apk" },
+      "ios": { "simulator": true }
     }
   },
-  "submit": { "production": {} }
+  "submit": {
+    "store": {}
+  }
 }
