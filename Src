@@ -1,0 +1,10 @@
+src/
+  components/
+    SerialInput.tsx
+  screens/
+    HomeScreen.tsx
+    DetailsScreen.tsx
+  data/
+    sampleData.ts
+  utils/
+    helpers.ts
