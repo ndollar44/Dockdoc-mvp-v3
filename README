@@ -1,0 +1,18 @@
+import zipfile
+import os
+
+# Path to the uploaded zip file
+zip_path = '/mnt/data/HERE!.zip'
+extract_path = '/mnt/data/HERE_extracted'
+
+# Extract the zip file
+with zipfile.ZipFile(zip_path, 'r') as zip_ref:
+    zip_ref.extractall(extract_path)
+
+# Get folder structure
+folder_structure = {}
+for root, dirs, files in os.walk(extract_path):
+    rel_path = os.path.relpath(root, extract_path)
+    folder_structure[rel_path] = files
+
+folder_structure
