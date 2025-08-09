@@ -1,18 +1,19 @@
 {
-  "expo": {
-    "name": "DockDoc",
-    "slug": "dockdoc-mvp-v3",
-    "scheme": "dockdoc",
-    "version": "0.1.2",
-    "orientation": "portrait",
-    "platforms": ["ios", "android"],
-    "sdkVersion": "51.0.0",
-    "assetBundlePatterns": ["**/*"],
-    "ios": {
-      "supportsTablet": false,
-      "infoPlist": {
-        "NSCameraUsageDescription": "This app uses the camera to scan serial numbers."
-      }
+  "cli": { "version": ">= 13.0.0" },
+  "build": {
+    "apk": {
+      "android": { "buildType": "apk" }
     },
-    "android": {
-      "package": "com.ndollar.dockdoc",
+    "store": {
+      "android": { "buildType": "app-bundle" }
+    },
+    "development": {
+      "developmentClient": true,
+      "android": { "buildType": "apk" },
+      "ios": { "simulator": true }
+    }
+  },
+  "submit": {
+    "store": {}
+  }
+}
