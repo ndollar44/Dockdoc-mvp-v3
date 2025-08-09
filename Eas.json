@@ -1,0 +1,7 @@
+{
+  "build": {
+    "android": { "workflow": "managed" },
+    "ios": { "workflow": "managed" }
+  },
+  "cli": { "version": ">= 13.0.0" }
+}
