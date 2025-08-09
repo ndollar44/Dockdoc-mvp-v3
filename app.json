@@ -15,13 +15,16 @@
       }
     },
     "android": {
-      "package": "com.ndollar.dockdoc",
-      "permissions": ["CAMERA"]
+      "permissions": ["CAMERA"],
+      "package": "com.ndollar.dockdoc"
     },
     "extra": {
       "eas": {
         "projectId": "7404e5b9-697a-412a-9879-c1dd88c92b76"
       }
+    },
+    "cli": {
+      "appVersionSource": "remote"
     }
   }
 }
