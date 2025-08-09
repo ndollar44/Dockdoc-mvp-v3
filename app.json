@@ -1,7 +1,7 @@
 {
   "expo": {
     "name": "DockDoc",
-    "slug": "dockdoc-eas",
+    "slug": "dockdoc-mvp-v3",
     "scheme": "dockdoc",
     "version": "0.1.2",
     "orientation": "portrait",
@@ -15,8 +15,4 @@
       }
     },
     "android": {
-      "permissions": ["CAMERA"],
-      "package": "com.ndollar.dockdoc"
-    }
-  }
-}
+      "package": "com.ndollar.dockdoc",
