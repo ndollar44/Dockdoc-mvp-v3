@@ -1,28 +1,21 @@
 {
-  "name": "DockDoc",
-  "slug": "dockdoc-eas",
-  "scheme": "dockdoc",
-  "version": "0.1.2",
-  "orientation": "portrait",
-  "platforms": ["ios", "android"],
-  "sdkVersion": "51.0.0",
-  "assetBundlePatterns": ["**/*"],
-  "ios": {
-    "supportsTablet": false,
-    "infoPlist": {
-      "NSCameraUsageDescription": "This app uses the camera to scan serial numbers."
+  "expo": {
+    "name": "DockDoc",
+    "slug": "dockdoc-mvp-v3",
+    "scheme": "dockdoc",
+    "version": "0.1.2",
+    "orientation": "portrait",
+    "platforms": ["ios", "android"],
+    "sdkVersion": "51.0.0",
+    "assetBundlePatterns": ["**/*"],
+    "ios": {
+      "supportsTablet": false,
+      "infoPlist": {
+        "NSCameraUsageDescription": "This app uses the camera to scan serial numbers."
+      }
+    },
+    "android": {
+      "package": "com.ndollar.dockdoc"
     }
-  },
-  "android": {
-    "permissions": ["CAMERA"],
-    "package": "com.ndollar.dockdoc"
-  },
-  "extra": {
-    "eas": {
-      "projectId": "7404e5b9-697a-412a-9879-c1dd88c92b76"
-    }
-  },
-  "cli": {
-    "appVersionSource": "remote"
   }
 }
