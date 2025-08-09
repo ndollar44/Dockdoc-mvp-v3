@@ -15,7 +15,13 @@
       }
     },
     "android": {
-      "package": "com.ndollar.dockdoc"
+      "package": "com.ndollar.dockdoc",
+      "permissions": ["CAMERA"]
+    },
+    "extra": {
+      "eas": {
+        "projectId": "7404e5b9-697a-412a-9879-c1dd88c92b76"
+      }
     }
   }
 }
