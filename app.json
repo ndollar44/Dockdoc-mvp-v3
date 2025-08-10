@@ -1,36 +1,33 @@
 {
   "expo": {
-    "name": "DockDoc",
+    "name": "DockDoc MVP v3",
     "slug": "dockdocmvpv3",
-    "scheme": "dockdoc",
-    "version": "0.1.2",
+    "version": "1.0.0",
     "orientation": "portrait",
-    "platforms": [
-      "ios",
-      "android"
-    ],
-    "sdkVersion": "51.0.0",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
     "assetBundlePatterns": [
       "**/*"
     ],
     "ios": {
-      "supportsTablet": false,
-      "infoPlist": {
-        "NSCameraUsageDescription": "This app uses the camera to scan serial numbers."
-      }
+      "supportsTablet": true
     },
     "android": {
-      "permissions": [
-        "CAMERA"
-      ],
-      "package": "com.ndollar.dockdoc",
+      "package": "com.ndoll97.dockdocmvpv3",
       "versionCode": 1
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
     },
     "extra": {
       "eas": {
         "projectId": "7404e5b9-697a-412a-9879-c1dd88c92b76"
       }
-    },
-    "owner": "ndoll97"
+    }
   }
 }
