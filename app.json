@@ -1,13 +1,18 @@
 {
   "expo": {
     "name": "DockDoc",
-    "slug": "dockdoc-mvp-v3",
+    "slug": "dockdocmvpv3",
     "scheme": "dockdoc",
     "version": "0.1.2",
     "orientation": "portrait",
-    "platforms": ["ios", "android"],
+    "platforms": [
+      "ios",
+      "android"
+    ],
     "sdkVersion": "51.0.0",
-    "assetBundlePatterns": ["**/*"],
+    "assetBundlePatterns": [
+      "**/*"
+    ],
     "ios": {
       "supportsTablet": false,
       "infoPlist": {
@@ -15,8 +20,12 @@
       }
     },
     "android": {
-      "permissions": ["CAMERA"],
-      "package": "com.ndollar.dockdoc"
+      "permissions": [
+        "CAMERA"
+      ],
+      "package": "com.ndollar.dockdoc",
+      "versionCode": 1,
+      "buildType": "apk"
     },
     "extra": {
       "eas": {
@@ -25,6 +34,7 @@
     },
     "cli": {
       "appVersionSource": "remote"
-    }
+    },
+    "owner": "ndoll97"
   }
 }
