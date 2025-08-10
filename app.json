@@ -1,32 +1,42 @@
 {
   "expo": {
-    "name": "DockDoc MVP v3",
+    "name": "DockDoc",
     "slug": "dockdocmvpv3",
     "version": "1.0.0",
+    "scheme": "dockdoc",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
-    "userInterfaceStyle": "light",
     "splash": {
       "image": "./assets/splash.png",
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
-    "assetBundlePatterns": [
-      "**/*"
-    ],
+    "assetBundlePatterns": ["**/*"],
+
+    "runtimeVersion": { "policy": "sdkVersion" },
+    "updates": {
+      "checkAutomatically": "ON_LOAD",
+      "fallbackToCacheTimeout": 0
+    },
+
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": false,
+      "bundleIdentifier": "com.ndoll97.dockdoc"
     },
+
     "android": {
-      "package": "com.ndoll97.dockdocmvpv3",
-      "versionCode": 1
+      "package": "com.ndoll97.dockdoc",
+      "versionCode": 1,
+      "permissions": ["CAMERA"],
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#FFFFFF"
+      }
     },
-    "web": {
-      "favicon": "./assets/favicon.png"
-    },
+
     "extra": {
       "eas": {
-        "projectId": "7404e5b9-697a-412a-9879-c1dd88c92b76"
+        "projectId": "REPLACE_WITH_YOUR_EAS_PROJECT_ID"
       }
     }
   }
